@@ -2,7 +2,7 @@ import { getPhotos } from '@/lib/data'
 import { createClient } from '@/lib/supabase/server'
 
 export default async function sitemap() {
-    const baseUrl = 'https://pictures.jealife.ga'
+    const baseUrl = 'https://stock-jealife.vercel.app'
 
     // 1. Fetch all photos
     const photos = await getPhotos()

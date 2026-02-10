@@ -50,12 +50,6 @@ export const metadata = {
     creator: "@jealife",
     images: ["https://images.unsplash.com/photo-1759082927410-1d1856152b50?q=80&w=2670&auto=format&fit=crop"],
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
-  themeColor: "#ffffff",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
@@ -65,6 +59,13 @@ export const metadata = {
   icons: {
     apple: "/icons/icon-192x192.png",
   },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({ children }) {

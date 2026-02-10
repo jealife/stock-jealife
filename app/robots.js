@@ -5,6 +5,6 @@ export default function robots() {
             allow: '/',
             disallow: ['/dashboard/', '/settings/', '/profile/'],
         },
-        sitemap: 'https://pictures.jealife.ga/sitemap.xml',
+        sitemap: 'https://stock-jealife.vercel.app/sitemap.xml',
     }
 }
