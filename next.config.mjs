@@ -9,6 +9,7 @@ const withSerwist = withSerwistInit({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactCompiler: true,
+  turbopack: {}, // Suppress the Turbopack vs Webpack error in Next 16
   images: {
     remotePatterns: [
       {
@@ -27,6 +28,6 @@ const nextConfig = {
   },
 };
 
-export default process.env.NODE_ENV === "production"
+export default (process.env.NODE_ENV === "production" && typeof withSerwist === "function")
   ? withSerwist(nextConfig)
   : nextConfig;
