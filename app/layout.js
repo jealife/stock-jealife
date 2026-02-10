@@ -30,8 +30,16 @@ export const metadata = {
   openGraph: {
     title: "JEaLiFe Pictures | Photos Premium du Gabon",
     description: "La source de visuels sur le Gabon. Alimentée par des créateurs et créatrices du monde entier.",
-    url: "https://pictures.jealife.ga",
+    url: "https://stock-jealife.vercel.app",
     siteName: "JEaLiFe Pictures",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1759082927410-1d1856152b50?q=80&w=2670&auto=format&fit=crop",
+        width: 1200,
+        height: 630,
+        alt: "JEaLiFe Pictures - Photos du Gabon",
+      },
+    ],
     locale: "fr_GA",
     type: "website",
   },
@@ -40,6 +48,7 @@ export const metadata = {
     title: "JEaLiFe Pictures | Photos Premium du Gabon",
     description: "La plus grande bibliothèque de photos premium du Gabon.",
     creator: "@jealife",
+    images: ["https://images.unsplash.com/photo-1759082927410-1d1856152b50?q=80&w=2670&auto=format&fit=crop"],
   },
   viewport: {
     width: "device-width",
